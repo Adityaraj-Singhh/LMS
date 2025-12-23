@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@mui/x-date-pickers": "^8.11.3",
-    "aws-sdk": "^2.1692.0",
     "axios": "^1.12.2",
     "basic-ftp": "^5.0.5",
     "bcryptjs": "^2.4.3",

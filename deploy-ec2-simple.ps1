@@ -69,10 +69,12 @@ FRONTEND_URL=http://ec2-65-0-69-254.ap-south-1.compute.amazonaws.com
 NODE_ENV=production
 BIND_IP=0.0.0.0
 EXTERNAL_IP=ec2-65-0-69-254.ap-south-1.compute.amazonaws.com
-AWS_ACCESS_KEY_ID=\${AWS_ACCESS_KEY_ID}
-AWS_SECRET_ACCESS_KEY=\${AWS_SECRET_ACCESS_KEY}
-AWS_REGION=ap-south-1
-AWS_BUCKET=newtest-lms
+BUNNY_STREAM_API_KEY=\${BUNNY_STREAM_API_KEY}
+BUNNY_LIBRARY_ID=567095
+BUNNY_CDN_HOSTNAME=vz-6b31636e-f82.b-cdn.net
+BUNNY_STORAGE_API_KEY=\${BUNNY_STORAGE_API_KEY}
+BUNNY_STORAGE_ZONE=lms-document-storage
+BUNNY_STORAGE_HOSTNAME=storage.bunnycdn.com
 EOF
 
 echo "⚙️ Updating frontend .env..."
@@ -85,10 +87,6 @@ HOST=0.0.0.0
 PORT=3000
 CHOKIDAR_USEPOLLING=false
 FAST_REFRESH=false
-AWS_ACCESS_KEY_ID=\${AWS_ACCESS_KEY_ID}
-AWS_SECRET_ACCESS_KEY=\${AWS_SECRET_ACCESS_KEY}
-AWS_REGION=ap-south-1
-AWS_BUCKET=newtest-lms
 EOF
 
 echo "🏗️ Installing backend dependencies..."
