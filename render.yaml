@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: sgt-lms-backend
+    runtime: node
+    region: singapore
+    plan: starter
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: BIND_IP
+        value: 0.0.0.0
+      # Add all other environment variables in Render dashboard
+    healthCheckPath: /api/health

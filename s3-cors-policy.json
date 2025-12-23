@@ -1,0 +1,34 @@
+{
+    "CORSRules": [
+        {
+            "AllowedHeaders": [
+                "*"
+            ],
+            "AllowedMethods": [
+                "GET",
+                "HEAD",
+                "POST",
+                "PUT"
+            ],
+            "AllowedOrigins": [
+                "http://ec2-65-0-56-84.ap-south-1.compute.amazonaws.com",
+                "https://ec2-65-0-56-84.ap-south-1.compute.amazonaws.com",
+                "http://ec2-3-110-146-56.ap-south-1.compute.amazonaws.com",
+                "https://ec2-3-110-146-56.ap-south-1.compute.amazonaws.com",
+                "http://localhost:3000",
+                "https://localhost:3000",
+                "http://localhost:5173",
+                "https://localhost:5173",
+                "*"
+            ],
+            "ExposeHeaders": [
+                "Content-Length",
+                "Content-Range",
+                "Content-Type",
+                "ETag",
+                "x-amz-request-id"
+            ],
+            "MaxAgeSeconds": 3600
+        }
+    ]
+}
