@@ -67,12 +67,6 @@ NODE_ENV=production
 # Network Configuration
 BIND_IP=0.0.0.0
 EXTERNAL_IP=$EC2_HOST
-BUNNY_STREAM_API_KEY=\${BUNNY_STREAM_API_KEY}
-BUNNY_LIBRARY_ID=567095
-BUNNY_CDN_HOSTNAME=vz-6b31636e-f82.b-cdn.net
-BUNNY_STORAGE_API_KEY=\${BUNNY_STORAGE_API_KEY}
-BUNNY_STORAGE_ZONE=lms-document-storage
-BUNNY_STORAGE_HOSTNAME=storage.bunnycdn.com
 EOF
 
 # Create frontend .env for production
